@@ -1,0 +1,13 @@
+@use '../global/bootstrap.scss';
+
+.block-grid {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.block-grid__list {
+  @include bootstrap.list-reset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
